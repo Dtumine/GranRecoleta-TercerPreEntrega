@@ -1,0 +1,146 @@
+
+    
+/* Section del Home */ 
+
+section{
+
+    .home-encabezado{
+        color: $color-principal;
+        font-size: 2.3rem;
+        font-style: italic;
+        text-align: center;
+        margin-top: 0.5rem;
+
+        margin-bottom: 0.3rem;
+    }
+    
+    .gran-recoleta-sub{
+        color: $color-principal;
+        text-align: center;
+        font-size: 0.9rem;
+        font-style: italic;
+        margin-top: 0.1rem;
+        margin-bottom: 2rem;
+        
+    }
+
+}
+
+
+    /* Section del Menu */ 
+
+section{
+
+    .menu-encabezado{   
+        color: $color-principal;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    
+}   
+
+
+    /* Section de Galeria */ 
+
+
+
+    section{
+
+            .galeria-encabezado{
+            color: $color-secundario;
+            text-align: center;
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-top: 2rem;
+            
+            }
+        }
+
+
+    
+    /* Section de Sucursales */ 
+
+                section{
+                    .sucursales-encabezado{
+                        color: $color-principal;
+                        text-align: center;
+                        margin-top: 2rem;
+                    }
+                }
+
+
+
+
+
+    /* MQ de Tablet */ 
+
+    @media screen and (min-width:600px){
+        
+        
+        section{
+            .home-encabezado{
+                font-size: 3.1rem;
+           }
+           
+           .gran-recoleta-sub{
+            font-size: 1.2rem;
+           }
+        }
+    }
+
+
+    
+
+
+
+
+
+
+        /* MQ de Desktop */ 
+
+ @media screen and (min-width:1024px){
+
+
+
+    /* Section del Home */         
+
+        section{
+            .home-encabezado{
+                font-size: 3.7rem;
+           }
+           
+           .gran-recoleta-sub{
+            font-size: 1.4rem;
+           }
+        }
+
+        
+
+    /* Section de Galeria */ 
+
+
+    section{
+
+        .galeria-encabezado{
+            font-size: 1.5rem;
+            
+            }
+        
+        }
+
+
+    /* Section de Sucursales */ 
+
+    section{
+
+        .sucursales-encabezado{
+
+            font-size: 2.8rem;
+        } 
+
+    }
+
+
+
+}

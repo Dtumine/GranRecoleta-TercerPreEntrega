@@ -1,0 +1,429 @@
+
+    /* Main home */
+  
+  .main-home{
+        height: 55vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 30%);
+        gap: 2rem;
+        margin: 1rem 2rem 3rem 2rem;
+        align-content: center;
+    
+            .imagen-home-dos{
+                display: none;
+            } 
+            .imagen-home-cinco{
+                display: none;
+            }
+
+            div img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+    }
+
+
+        /* Main Menu */          
+
+        .main-menu{
+
+                @include flex;
+                
+                
+
+                article{
+
+                    h2{ font-size: 2rem;
+                        color: $color-principal;
+                        margin-top: 0.2rem;}
+
+
+
+                    h3{ font-size: 1.3rem;
+                        color: $color-blanco-principal;
+                        margin-top: 2rem;}
+
+
+                    p{
+                        font-size: 0.8rem;}
+                        
+                }
+
+              
+           
+
+                .card-pizzas{
+                    @include flex-dos;
+                    @extend %estilos-cards;
+                    height: 75rem;
+                    margin: 2rem 1rem 2rem 1rem;
+
+               
+                }
+
+                .card-bebidas{
+                    @include flex-dos;
+                    @extend %estilos-cards;
+                    height: 50rem;
+                    margin: 2rem 1rem 2rem 1rem;
+                }
+
+                
+                .card-postres{
+                    @include flex-dos;
+                    @extend %estilos-cards;
+                    height: 30rem;
+                    margin-top: 2rem;
+                    margin-bottom: 5.6rem;
+
+              
+
+                }
+
+
+        }
+
+
+        /* Main Galeria */ 
+
+           
+        .main-galeria{
+                
+                margin-top: 3rem;
+
+                img{
+                    width: 100%;
+                    height: 100%;}
+        }
+
+
+
+    
+        /* Main Reservas */
+
+        .main-reservas{
+
+            .formulario-reservas{
+                min-width: 280px;
+                max-width: 22rem;
+                height: 36rem;
+                margin: auto;
+                background-color: rgb(233, 47, 47);
+                padding: 0.7rem 1.4rem;
+                padding-top: 0.1rem;
+                margin-top: 2.5rem;
+                margin-bottom: 5.6rem;
+                border-radius: 1.5rem;
+
+         
+
+
+                .contacto{
+                    
+
+                    color: $color-blanco-principal ;
+                    font-size: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    text-align: center;
+                
+                }
+
+                .input-reservas{
+
+                @extend %estilos-form;
+        
+                }
+
+                .mensaje-reservas{
+                
+                @extend %estilos-form;
+                }
+
+                .boton-enviar{
+                
+                @extend %estilos-form;
+                    
+                }
+                
+                .mensaje-reservas{
+                    min-height: 100px;
+                    max-height: 200px;
+                    max-width: 100%;
+                }
+                
+                .boton-enviar{
+                    background-color: #31384a;
+                    color: $color-blanco-principal;
+                    padding: 0.5rem;
+                
+                }
+                
+            }
+                
+        } 
+
+
+
+
+        /* Main Sucursales */
+
+
+        .main-sucursales{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: $color-fondo;
+            margin-bottom: 5.6rem;
+
+
+                .sucursal{
+                @include flex;
+                min-width: 280px;
+                max-width: 24rem;
+                height: 11rem;
+                border: solid 2px $color-blanco-principal;
+                border-radius: 2rem;
+                background-color: black;
+                margin: 4rem 1rem 2rem 1rem;
+
+
+
+
+                article{
+
+                    .sucursales-localidad{
+                        text-align: center;
+                        font-size: 2rem;
+                        color: $color-blanco-principal;
+                        font-family: 'Open Sans', sans-serif;
+                        margin-top: 3rem;
+                    }
+
+                    p{  
+                        text-align: center;
+                        font-size: 1rem;
+                        margin-left: 2rem;
+                        margin-right: 2rem;
+                        margin-bottom: 2.5rem;
+
+                    }
+                
+                }
+            
+            }
+
+        }   
+               
+
+
+        
+
+
+    /* MQ de Tablet */
+
+@media screen and (min-width:600px){
+
+        
+    
+        /* main Home */ 
+
+
+        .main-home{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 50% 50%;
+            align-content: center;
+    
+            .imagen-home-dos{
+    
+                display: block;
+            }
+        
+            .imagen-home-uno, .imagen-home-tres{
+                grid-row: span 2;
+            }
+    
+            .imagen-home-cuatro{
+                grid-column: span 1;
+            }
+    
+        }
+    }
+
+
+
+
+
+
+/* MQ de Desktop */ 
+
+
+@media screen and (min-width:1024px){
+
+
+
+    /* Main Home */ 
+
+
+    .main-home{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50% 50%;
+        align-content: center;
+
+        .imagen-home-dos{
+
+            display: block;
+        }
+    
+        .imagen-home-uno, .imagen-home-tres{
+            grid-row: span 2;
+        }
+
+        .imagen-home-cuatro{
+            grid-column: span 1;
+        }
+
+    }
+
+
+    /* Main Menu */
+
+    .main-menu{
+
+
+
+        article{
+
+
+            h2{ font-size: 3rem;
+                color: $color-principal;
+            }
+
+
+            h3{ font-size: 1.3rem;
+                color: $color-blanco-principal;
+                margin-top: 2rem;
+            }
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+
+
+
+
+    
+    .card-pizzas{
+        width: 35rem;
+        min-width: 280px;
+        max-width: 50rem;
+        height: 75rem;
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    .card-bebidas{
+
+        width: 35rem;
+        min-width: 280px;
+        max-width: 50rem;
+        height: 50rem;
+        margin: 2rem 1rem 2rem 1rem;
+    
+    }
+
+    .card-postres{
+        width: 35rem;
+        min-width: 280px;
+        max-width: 45rem;
+        height: 40rem;
+        margin-bottom: 5.6rem;
+    }
+
+}
+
+
+
+
+
+
+
+    /* Main Galeria */ 
+
+
+    .main-galeria{
+
+        height: 60vh;
+        margin-top: 2rem;
+ 
+        .carousel{
+        margin: auto;
+        width: 50%;
+        height: 50%;
+    
+        }
+
+    }   
+    
+
+
+    /* Main Reservas */ 
+
+    .main-reservas{
+
+        .formulario-reservas{
+
+            width: 35rem;
+
+            input{
+                display: block;
+            }
+
+            label{
+                display: block;
+            }
+
+            
+            .boton-restablecer{
+                display: inline;
+            }
+
+            .boton-enviar{
+                display: inline;
+            }
+
+
+
+        }
+
+    }
+
+    
+
+    /* Main Sucursales */ 
+
+    .main-sucursales{
+
+        .sucursal{
+
+            @include flex;
+            width: 30rem;
+            height: 11rem;
+            border: solid 2px $color-blanco-principal;
+            border-radius: 2rem;
+            background-color: black;
+            margin: 4rem 1rem 2rem 1rem;
+
+
+        }
+
+    }
+
+}
+    
+    

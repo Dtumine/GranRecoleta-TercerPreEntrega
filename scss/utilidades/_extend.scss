@@ -1,0 +1,21 @@
+
+/* extend formulario */
+
+%estilos-form{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+
+
+/* extend cards */
+
+%estilos-cards{  
+    color: $color-blanco-principal;
+    border: solid 4px $color-principal;
+    border-radius: 2rem;
+    width: 20rem;
+    min-width: 280px;
+    max-width: 50rem;
+}
